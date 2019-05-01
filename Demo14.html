@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#div1").fadeOut();
+				$("#div2").fadeOut("slow");
+				$("#div3").fadeOut(3000);
+			});
+		});
+	</script>
+	
+	<body>
+		<p>演示带有不同参数的 fadeOut() 方法。</p>
+		<button type="button">点击这里演示淡出的方法。</button>
+		
+		<div id="div1" style="width: 80px; height: 80px; background-color: darkred;">
+			上海
+		</div>
+		
+		<div id="div2" style="width: 80px; height: 80px; background-color: #00FFFF;">
+			广东
+		</div>
+		
+		<div id="div3" style="width: 80px; height: 80px; background-color: #E5EECC;">
+			西安
+		</div>
+	</body>
+</html>
