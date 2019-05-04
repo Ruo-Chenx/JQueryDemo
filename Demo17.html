@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		
+		<style type="text/css">
+			div.panel,p.filp {
+				margin: 0px;
+				padding: 5px;
+				text-align: center;
+				background-color: #e5eecc;
+				border: 1px solid balck;
+			}
+			
+			div.panel {
+				height: 200px;
+				display: none;
+			}
+		</style>
+			
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".filp").click(function(){
+					$(".panel").slideDown("slow");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="panel">
+			<h1>jQuery slideDown() 方法用于向下滑动元素。</h1>
+			<p>W3School - 领先的WEB技术教程站点</p>
+			<p>在W3School中你可以找到你所要的网站建设教程。</p>
+		</div>	
+			<p class="filp"> 请点击这里</p>
+		
+	</body>
+</html>

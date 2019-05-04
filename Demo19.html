@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		
+		<style type="text/css">
+			div.panel,p.flip {
+				background-color: #E5EECC;
+				margin: 0px;
+				padding: 5px;
+				text-align: center;
+				border: 1px solid black;
+			}
+			
+			div.panel {
+				height: 120px;
+				display: none;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".flip").click(function(){
+					$(".panel").slideToggle("slow");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>jQuery slideToggle() 方法可以在 slideDown() 与 slideUp() 方法之间进行切换。</h1>
+		
+		<div class="panel">
+			<p>W3School</p>
+			<p>DCloud</p>
+		</div>
+		
+		<p class="flip">点击这里实现上下滑动的切换</p>
+	</body>
+</html>

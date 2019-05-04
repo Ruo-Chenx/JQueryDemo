@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+			
+		<style type="text/css">
+			div.panel,p.flip {
+				background-color: #E5EECC;
+				padding: 5px;
+				margin: 0px;
+				border: 1px solid black;
+				text-align: center;
+			}
+			
+			div.panel {
+				height: 150px;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".flip").click(function(){
+					$(".panel").slideUp("slow");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>jQuery slideUp() 方法用于向上滑动元素。</h1>
+		<div class="panel">
+			<p>每天都是新的一天</p>
+			<p>快乐每一天</p>
+			
+		</div>
+		
+		<p class="flip">点击这里用于向上滑动元素。</p>
+	</body>
+</html>
