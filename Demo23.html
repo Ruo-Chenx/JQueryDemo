@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("div").animate({
+						height: 'toggle'
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p>默认情况下，所有 HTML 元素的位置都是静态的，并且无法移动。如需对位置进行操作，记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute</p>
+		<button>开始动画</button>
+		
+		<div style="width: 100px; height: 100px; background-color: #E5EECC; position: absolute;">
+			
+		</div>
+	</body>
+</html>
