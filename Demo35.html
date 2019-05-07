@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#btn1").click(function(){
+					$("p").append("<strong> Appended text! </strong>");
+				});
+				
+				$("#btn2").click(function(){
+					$("ol").append("<li>Appended item</li>");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p>This is a paragraph.</p>
+		<p>This is another paragraph.</p>
+		
+		<ol>
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>Lise Item 3</li>
+		</ol>
+		
+		<button id="btn1">追加文本</button>
+		<button id="btn2">追加列表项</button>
+	</body>
+</html>

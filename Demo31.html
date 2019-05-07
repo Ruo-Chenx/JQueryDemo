@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#btn").click(function(){
+					alert("Text:" + $("#demo").text());
+				});
+				
+				$("#btn2").click(function(){
+					alert("HTML:" + $("#demo").html());
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p id="demo">这是变量中的<b>粗体</b>文本</p>
+		
+		<button id="btn">显示文本</button>
+		<button id="btn2">显示 HTML</button>
+	</body>
+</html>

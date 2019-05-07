@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".btn").click(function(){
+					alert("Value:" + $("#demo").val());
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p>姓名：<input type="text" id="demo" value="耿耿星河"></p>
+		
+		<button class="btn">显示值</button>
+	</body>
+</html>
