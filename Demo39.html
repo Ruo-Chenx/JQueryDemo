@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		
+		<script type="text/javascript">
+			function afterText(){
+				var txt1 = "<b>以HTML方法创建元素</b>";
+				var txt2 = $("<i></i>").text("通过jQuery创建元素");
+				var txt3 = document.createElement("big");
+				txt3.innerHTML = "通过DOM创建元素";
+				
+				$("img").after(txt1, txt2, txt3);
+			}
+		</script>
+	</head>
+	<body>
+		<img src="img/-300e8092d4d0bff5.jpg" >
+		<br>
+		
+		<button type="button" onclick="afterText()">在图片的后面添加文本</button>
+	</body>
+</html>
