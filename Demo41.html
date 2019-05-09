@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("#demo").empty();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>jQuery empty() 方法删除被选元素的子元素。</h1>
+		<div id="demo" style="height: 200px; width: 200px; background-color: #E5EECC; border: 3px solid black;">
+			This is a text in the div.
+			<p>This is a paragraph in the div.</p>
+			<p>This is anthor paragraph in the div.</p>
+		</div>
+		
+		<button type="button">点我</button>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("p").remove(".italic");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>jQuery remove() 方法也可接受一个参数，允许您对被删元素进行过滤。</h1>
+		<p >This is a paragraph.</p>
+		<p class="italic">This is anther paragraph.</p>
+		<p class="italic">This is anther patagraph.</p>
+		
+		<button>删除所有class 为italic的p</button>
+	</body>
+</html>
+
+
+
+
+
+
