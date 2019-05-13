@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("div").find("*").css({
+					"color" : "red",
+					"border" : "2px solid red"
+				});
+			});
+		</script>
+		
+		<style type="text/css">
+			.descendants * {
+				display: block;
+				border: 2px solid #E5EECC;
+				color: lightgrey;
+				padding: 5px;
+				margin: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="descendants" style="width: 500px;"> div (当前元素)
+			<p class="1"> p (子)
+				<span>span (孙)</span>
+			</p>
+			
+			<p class="2"> p child
+				<span>span (孙)</span>
+			</p>
+		</div>
+	</body>
+</html>
